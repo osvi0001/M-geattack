@@ -5,13 +5,18 @@
 .info-text {
   background-color: var(--info-background-color);
   padding: 0;
+  box-shadow: 0 0 10px #3cff00;
+  border: 2px solid #3cff00;
 }
-.info-text h2 {
-  line-height: 3rem;
+ .info-text h2 {
+  background-color: transparent;
+  border: 3px solid  #3cff00;
+  border-radius: 10px;
+  margin: 20px;
   text-align: center;
-  background-color: var(--headline-bg-color-inverted);
-  color: var(--headline-color-inverted);
-  padding-top: 5px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px  #3cff00;
 }
 .info-text h3 {
   font-size: 0.8rem;
@@ -29,3 +34,9 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+.info-graphic svg{
+  width: 100%;
+ height: auto;
+}
+

@@ -5,14 +5,65 @@
 #form-section,
 #form-summary {
   background-color: var(--info-background-color);
-  padding: 0;
+  padding-left: 3 0px;
+  box-shadow: 0 0 10px #3cff00;
+  border: 2px solid #3cff00;
+
 }
-#form-summary h2 {
-  line-height: 3rem;
+
+
+#form{
+  width: 600px;
   text-align: center;
-  background-color: var(--headline-bg-color-inverted);
-  color: var(--headline-color-inverted);
-  padding-top: 5px;
+}
+
+
+
+.name .form-group{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+   padding-right: 30px;
+}
+
+.contact{
+   width: 100%;
+    padding: 10px ;
+    padding-right: 5px;
+    background: transparent;
+    border: 3px solid  #3cff00;
+    outline: none ;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+.contact:hover{
+  box-shadow: 0 0 10px  #3cff00;
+}
+
+
+#form-summary h2 {
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid  #3cff00;
+  border-radius: 10px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px  #3cff00;
+  margin-bottom: 50px;
+}
+#form-section h2{
+  background-color: transparent;
+  border: 3px solid  #3cff00;
+  border-radius: 10px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px  #3cff00;
 }
 #form-summary h3 {
   font-size: 0.8rem;
@@ -29,4 +80,99 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+} 
+
+#checkbox:hover, #checkbox2:hover, #checkbox3:hover, #checkbox4:hover, #checkbox5:hover{
+  box-shadow: 0 0 10px  #3cff00;
+}
+#checkbox5{
+  margin-bottom: 50px;
+}
+.checkbox-text:hover{
+  text-shadow: 0 0 10px  #3cff00;
+}
+
+#besked{
+  display: block;
+  background-color: transparent;
+  border: 3px solid  #3cff00;
+  outline: none;
+  border-radius: 10px;
+}
+.text-felt :hover{
+  box-shadow: 0 0 10px  #3cff00;
+}
+.text-felt ::placeholder{
+  font-family: "Roboto", sans-serif;
+
+}
+
+.options .options-box:hover{
+  box-shadow: 0 0 10px  #3cff00;
+  cursor: pointer;
+}
+.options-box{
+  background-color: transparent;
+  border: 2px solid  #3cff00;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-right: 100px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+  /* button */
+
+#submit_btn{
+  background-color: #3cff00;
+  box-shadow: 0 0 10px  #3cff00;
+  padding:  12px 32px;
+  border: none;
+  outline: none  ;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer ;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+#submit_btn:hover{
+  box-shadow: 0 0 20px  #3cff00;
+}
+#submit_btn:active{
+color: rgb(255, 247, 247);
+background-color: transparent ;
+}
+#reset_btn{
+  background-color: #3cff00;
+  box-shadow: 0 0 10px  #3cff00;
+  padding:  12px 32px;
+  border: none;
+  outline: none  ;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer ;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+
+}
+#reset_btn:hover{
+  box-shadow: 0 0 20px  #3cff00;
+}
+#reset_btn:active{
+color: rgb(255, 255, 255);
+background-color: transparent;
 }

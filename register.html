@@ -1,71 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/infographic.css" />
-    <link rel="stylesheet" href="css/forms.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper">
-          <a href="index.html"> LOGOTYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/infographic.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper">
+        <a href="index.html"> <img src="img/logogo.png" alt="Pegetto News"> </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Instruktioner</a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Udfyld skemaet</h2>
+
+      </article>
+
+      <!-- Kontakt info -->
+
+      <form id="webform" class="name">
+        <div class="form-group">
+          <div>
+            <div class="contact-field">
+              <input class="contact" id="f-name" type="text" placeholder="Fornavn" required>
+            </div>
+            <div class="contact-field">
+              <input class="contact" id="l-name" type="text" placeholder="Efternavn" required>
+            </div>
+          </div>
+          <div>
+            <div class="contact-field">
+              <input class="contact" id="nr" type="text" placeholder="tlf nummer" required>
+            </div>
+            <div class="contact-field">
+              <input class="contact" id="mail" type="text" placeholder="Email adresse" required>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+      <!-- område -->
+
+      <form id="webform">
+        <div class="form-group">
+          <label class="area-label" for="area"><strong>I hvilket område så du mågen/mågerne?</strong></label>
+          <div class="options">
+          <select class="options-box" name="area" id="area" required> j
+            <option value="" disabled selected>Væld et område</option>
+            <option id="op1" value="o1">Mo Town</option>
+            <option id="op2" value="o2">Fly Bridge</option>
+            <option id="op3" value="o3">Gull Beach</option>
+            <option id="op4" value="o4">Uptown</option>
+          </select>
+        </div>
+        </div>
+      </form>
+
+      <!-- checkbokse -->
+
+      <form action="check">
+        <div class="form-group">
+          <p><strong>Hvilke af følgende udsagn passer?</strong></p>
+          <div>
+            <input id="checkbox1" type="checkbox" name="checkbox">
+            <label class="checkbox-text" for="checkbox1">Mågen havde tydelige blodkar i øjnene </label>
+          </div>
+          <div>
+            <input id="checkbox2" type="checkbox" name="checkbox">
+            <label class="checkbox-text" for="checkbox2">Mågens adfærd var mistænkelig </label>
+          </div>
+          <div>
+            <input id="checkbox3" type="checkbox" name="checkbox">
+            <label class="checkbox-text" for="checkbox3">Mågen var aggressiv </label>
+          </div>
+          <div>
+            <input id="checkbox4" type="checkbox" name="checkbox">
+            <label class="checkbox-text" for="checkbox4">Mågen var en del af en større flok </label>
+          </div>
+          <div>
+            <input id="checkbox5" type="checkbox" name="checkbox">
+            <label class="checkbox-text" for="checkbox5">Mågen kunne tale</label>
+          </div>
+        </div>
+      </form>
+
+      <!-- tekstfelt -->
+
+      <form id="Uddyb">
+        <div class="form-group">
+          <label for="uddyb"><strong>Fortæl os mere om dine oplevelser</strong></label>
+          <div class="text-felt">
+          <textarea name="besked" id="besked" rows="15" cols="90" placeholder="Skriv..."></textarea>
+          </div>
+        </div>
+      </form>
+
+      <form>
+        <button id="submit_btn" type="button">Indsend</button>
+      </form>
+
+    </section>
+
+
+
+
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article id="sum">
+        <div>
+        <div>
+          <h3>Fornavn</h3>
+          <p id="bruger-navn"></p>
+        </div>
+        <div>
+          <h3>Efternavn</h3>
+          <p id="bruger-navn2"></p>
+        </div>
+        <div>
+          <h3>Tlf Nummer</h3>
+          <p id="bruger-nr"></p>
+        </div>
+        <div>
+          <h3>Email Adresse</h3>
+          <p id="bruger-mail"></p>
+        </div>
+      </div>
+
+
+
+        <div>
+          <h3>Område</h3>
+          <p id="bruger-område"></p>
+
+        </div>
+
+
+          <h3>Beskrivelse</h3>
+          <!-- <p id="bruger-beskrivelse"></p> -->
+          <div>
+            <p id="beskrivelse1"></p>
+          </div>
+          <div>
+            <p id="beskrivelse2"></p>
+          </div>
+          <div>
+            <p id="beskrivelse3"></p>
+          </div>
+          <div>
+            <p id="beskrivelse4"></p>
+          </div>
+          <div>
+            <p id="beskrivelse5"></p>
+          </div>
+
+
+
+
+      </article>
+
+      <p class="placeholder"></p>
+
+      <form>
+        <button id="reset_btn" type="reset">Reset</button>
+      </form>
+    </section>
+
+
+
+  </main>
+ 
+  
+ 
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  
+  </footer>
+  <script src="js/forms.js"></script>
+</body>
+
 </html>

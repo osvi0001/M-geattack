@@ -22,9 +22,21 @@ footer {
   color: var(--secondary-font-color);
   height: min-content;
 }
+
+header{
+  border-right: 2px solid #3cff00;
+  border-left: 2px solid #3cff00;
+  border-bottom: 2px solid #3cff00;
+}
+
 .logo-wrapper {
   background-color: var(--logotype-background-color);
   color: var(--logotype-color);
+}
+
+
+.logo_img{
+  width: 200px;
 }
 #main-disclamer {
   height: 180px;
@@ -33,6 +45,10 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
+  border-right: 2px solid #3cff00;
+  border-left: 2px solid #3cff00;
+  border-bottom: 2px solid #3cff00;
+  box-shadow: 0 8px 10px #3cff00;
 }
 #main-disclamer-content {
   display: flex;
@@ -43,6 +59,11 @@ main section {
   /* margin: 10px; */
   /* border: 1px solid var(--border-color); */
   border-radius: var(--border-radius);
+}
+
+@font-face {
+  font-family: rubik;
+  src: url(/fonts/Rubik-VariableFont_wght.ttf);
 }
 h1,
 h2,
@@ -61,6 +82,9 @@ h1 {
 }
 h2 {
   font-size: var(--headline2-size);
+  padding-right: 10px;
+ box-shadow: 0 0 15px #3cff00;
+ background-color: transparent;
 }
 h3 {
   font-size: var(--headline3-size);
@@ -78,6 +102,9 @@ main > h1 {
 header > nav {
   height: 100%;
 }
+nav{
+  box-shadow: 0 0 15px #3cff00;
+}
 nav ul {
   list-style: none;
 }
@@ -87,7 +114,7 @@ nav a {
   color: var(--link-color);
 }
 a {
-  font-family: var(--link-font);
+  font-family: var(--link-font)
 }
 #logotype-wrapper {
   background-color: var(--logotype-background-color);
@@ -97,15 +124,20 @@ a {
   align-items: center;
   padding: 0 0 0 1rem;
 }
-#logotype-wrapper > a {
+#logotype-wrapper > a , #logotype-wrapper > a > img{
   font-size: var(--logotype-size);
   color: var(--logotype-color);
   font-family: var(--logotype-font);
   height: 3rem;
-  width: 100%;
   display: flex;
   align-items: center;
 }
+
+#logotype-wrapper > a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+} 
 header nav li a {
   margin: 1.5rem;
   background-color: var(--followup-text-bg-color);
