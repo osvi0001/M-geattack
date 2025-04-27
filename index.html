@@ -1,112 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper">
-          <a href="index.html"> <img src="img/logogo.png" alt="Pegetto News"> </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html"> Instruktioner </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img class="logo_img" src="img/logo.png" alt="ICON" />
-        <div>
-          <h1>Dagens Nyheder</h1>
-          <p>Få alle de seneste nyheder med abbonnemet hos Pegetto News</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/custom.css" id="dark"/>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper">
+        <a href="index.html">  <img id="image" src="img/logogo.png" alt="Pegetto News"> </a>
       </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html"> Instruktioner </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li>
+          <legend id="switchtext3"></legend>
+          <label class="switch">
+              <input id="switchBtn3" type="checkbox" />
+              <span class="slider"></span>
+  
+  
+          </label> 
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img id="biglogo" class="logo_img" src="img/logo.png" alt="ICON" />
+      <div class="dagens">
+        <h1>Dagens Nyheder</h1>
+        <p>Få alle de seneste nyheder med abbonnemet hos Pegetto News</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="img/joeymåge (1) 3.webp" alt="billede af joey måge" />
+        <div class="daily_text">
+          <h2>I møde med Joey Måge?</h2>
+          <p>Hvad gør du hvis du står over for én som Joey Måge, vi har talt med ekspertene, om præcis hvad du skal gøre
+            i mødet med en måge.</p>
+          <a href="instruction.html" class="read-more">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/måne.webp" alt="billede af måne" />
+        <div class="daily_text">
+          <h2>Har du set en mistænkelig måge?</h2>
+          <p>For at få styr på denne situation, er det vigtigt for os at få en forståelse for præcis hvad og hvem det er
+            vi har at gøre med.</p>
+          <a href="register.html" class="read-more">Indberet</a>
+        </div>
+      </article>
     </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="img/joeymåge (1) 3.webp" alt="billede af joey måge" />
-          <div class="daily_text">
-            <h2>I møde med Joey Måge?</h2>
-            <p>Hvad gør du hvis du står over for én som Joey Måge, vi har talt med ekspertene, om præcis hvad du skal gøre i mødet med en måge.</p>
-            <a href="instruction.html" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="img/måne.webp" alt="billede af måne" />
-          <div class="daily_text">
-            <h2>Har du set en mistænkelig måge?</h2>
-            <p>For at få styr på denne situation, er det vigtigt for os at få en forståelse for præcis hvad og hvem det er vi har at gøre med.</p>
-            <a href="register.html" class="cta_btn">Indberet</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Joey Måge anholdt</h3>
-          <p>Joey Måge - lederen af banden Mo Town Killas. Anholdt efter væbnet røveri i fiskehandleren. "Ville have noget fisk til min kæreste, hun er en ener"</p>
-          <img src="img/joeymåge (1) 3.webp" alt="billede af joey måge" />
-          <a class="cta_btn" href="">Læs mere</a>
-          <dialog>
-            <h4>I møde med Joey Måge?</h2>
-              <form method="dialog">
-                <button class="close-dialog">Luk Nyhed</button>
-              </form>
 
-          </dialog>
-        </article>
-        <article class="news_card">
-          <h3>Luk vinduerne</h3>
-          <p>Fly Town særligt udsat for røverier. Borgmester advarer om at lade vinduer stå åbne. "De flyver direkte ind"</p>
+    <!-- news cards -->
+
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Joey Måge anholdt</h3>
+        <p>Joey Måge - lederen af banden Mo Town Killas. Anholdt efter væbnet røveri i fiskehandleren. "Ville have noget
+          fisk til min kæreste, hun er en ener"</p>
+        <img src="img/joeymåge (1) 3.webp" alt="billede af joey måge" />
+
+        <dialog>
+          <h4>KONGENS NYTORV: KAMPZONER I DET INDRE KØBENHAVN</h4>
+          <p class="newsDate">6. APRIL 2025 – KL. 22:41</p>
+          <img src="img/joeymåge (1) 3.webp" alt="billede af joey måge" />
+          <p>“Ville have noget fisk til min kæreste, hun er en ener,” udtaler Joey efter anholdelsen.
+            Det var en helt almindelig tirsdag formiddag i havnekvarteret, indtil helvede brød løs foran den lokale
+            fiskehandler. Klokken 10:47 rullede en gruppe velkoordinerede måger ind over taget, dykkede ned som små
+            kampfly og midt i kaosset landede Joey Måge, kendt blandt lokale som både charmetrold og notorisk kriminel.
+            “Det var ikke bare et simpelt fisketyveri. Det her var organiseret,” udtaler en chokeret fiskehandler. “Han
+            kom ind som om han ejede stedet. Først skreg han så nappede han direkte ned i den ferske torsk, og i løbet
+            af få sekunder havde han hele banden med sig. De fløj med sild som om det var millionposer.”
+            Joey Måge menes at være lederen af Mo Town Killas en bande bestående af 4-6 aggressive måger med speciale i
+            madtyveri. Gruppen er tidligere blevet set på byens torv, hvor de stjal en hel shawarma fra en sagesløs
+            turist og forsøgte at overtage en burgerbar ved hjælp af kollektiv skrigen og afføring som afpresning.
+            Ved anholdelsen sagde Joey roligt:
+            “Jeg ville bare have noget fisk til min kæreste. Hun er en ener. Den slags kræver lidt ekstra.”
+            Han blev fløjet væk fra gerningsstedet af politiets specialenhed (også kendt som Falkoneren), og ventes nu
+            at blive afhørt i sagen. Rygterne siger, at han ikke samarbejder og nægter at sladre om de andre i banden
+            ”Jeg squawker ikke,” skulle han have sagt.
+            Mo Town Killas er nu under tæt overvågning, og myndighederne opfordrer borgere til at holde øje med
+            mistænkelig aktivitet i nærheden af fiskebutikker, pølsevogne og picnicområder.</p>
+          <form method="dialog">
+            <button class="close-dialog">X</button>
+          </form>
+        </dialog>
+        <button class="read-more">Læs mere</button>
+      </article>
+
+
+      <article class="news_card">
+        <h3>Luk vinduerne</h3>
+        <p>Fly Town særligt udsat for røverier. Borgmester advarer om at lade vinduer stå åbne. "De flyver direkte ind"
+        </p>
+        <img src="img/måge1.webp" alt="billede af måge med hue på" />
+
+        <dialog>
+          <h4>KONGENS NYTORV: KAMPZONER I DET INDRE KØBENHAVN</h4>
+          <p class="newsDate">6. APRIL 2025 – KL. 22:41</p>
           <img src="img/måge1.webp" alt="billede af måge med hue på" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Er det månen?</h3>
-          <p>femogtyvende aften i træk med fuldmåne. Er det grunden til udviklingen hos mågerne, er det varmåger?</p>
-          <img src="img/måne.webp" alt="billede af fuldmåne" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
+          <p>Indbyggerne i Fly Town oplever i stigende grad en bølge af usædvanligt organiseret kriminalitet – ikke fra
+            mennesker, men fra luftens banditter. De lokale måger er blevet mere dristige end nogensinde før, og nu
+            rapporteres der om røverier direkte ind gennem åbne vinduer.
+            “De venter ikke længere på, at du går udenfor med din mad. De kommer efter dig inde i dit eget hjem,” siger
+            borgmester Mette Fjedergaard i en pressemeddelelse. “Vi har set en bekymrende stigning i rapporter om
+            indendørs snacktyveri, især omkring frokosttid.”
+            Et særligt dramatisk tilfælde fandt sted tirsdag formiddag, da en familie på Østersvinget mistede både en
+            hel makrelsalat og en pose rosiner på under 30 sekunder. “Den første måge kom gennem køkkenvinduet. To andre
+            fulgte med, som om det var planlagt. De skreg, baskede og var væk, før vi kunne nå at reagere,” fortæller
+            den chokerede mor, mens hendes søn nikker alvorligt og tilføjer: “Den ene tog min kiks.”
+            Eksperterne kalder det en ny type adfærd – luftbaseret hjemmerøveri – som typisk ses hos særligt selvsikre
+            mågebander, der opererer i byzoner. Ifølge ornitolog Tove Skrigdal skyldes det blandt andet en øget
+            tilvænning til mennesker og let adgang til mad.</p>
+          <form method="dialog">
+            <button class="close-dialog">X</button>
+          </form>
+        </dialog>
+        <button class="read-more">Læs mere</button>
+      </article>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-<script src="js/main.js"></script> 
-  </body>
+
+      <article class="news_card">
+        <h3>Er det månen?</h3>
+        <p>femogtyvende aften i træk med fuldmåne. Er det grunden til udviklingen hos mågerne, er det varmåger?</p>
+        <img src="img/måne.webp" alt="billede af fuldmåne" />
+        <dialog>
+          <h4>FORSKNINGSLABORATORIUM I SVEJTS FORMODES AT VÆRE EPICENTER FOR VIRUSET</h4>
+          <p class="newsDate">7. APRIL 2025 – KL. 00:17</p>
+          <img src="img/måne.webp" alt="billede af fuldmåne" />
+          <p>Eksperter splittede: Er vi vidne til naturens luner – eller et nyt fænomen?
+            Nye teorier peger på: varmåger.
+            Der er noget i luften over Fly Town – og det er ikke bare måger.
+            For femogtyvende aften i træk har en uafbrudt række af fuldmånelignende nætter lagt et mystisk skær over
+            byen. Mens astronomer stadig forsøger at forklare det usædvanlige fænomen, begynder en ny bølge af teorier
+            at dukke op: Kan den intense måneskin være skyld i den seneste adfærdsændring hos de lokale måger?
+            “Vi ser aggressivitet, koordinering og… intelligens,” siger dyreadfærdsforsker Poul Mørken. “Mågerne
+            reagerer anderledes. De flyver ikke kun for føde. Det er, som om noget trækker i dem. Noget… lunefuldt.”
+            Særligt én teori vinder frem på de sociale medier og i mørke Reddit-tråde: Varmåger.
+            Begrebet refererer til en mulig ny art eller en muteret version af den klassiske sølvmåge, aktiveret af
+            uafbrudt måneskin og stigende nattemperaturer. Flere borgere har rapporteret usædvanlig opførsel</p>
+          <form method="dialog">
+            <button class="close-dialog">X</button>
+          </form>
+        </dialog>
+        <button class="read-more">Læs mere</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/cards.js"></script>
+  <script src="js/dark.js"></script>
+</body>
+
 </html>
